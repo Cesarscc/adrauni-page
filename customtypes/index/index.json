@@ -1,0 +1,133 @@
+{
+  "format": "page",
+  "id": "index",
+  "label": "index",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "portada": {
+        "type": "Image",
+        "config": {
+          "label": "portada",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "formvector": {
+        "type": "Image",
+        "config": {
+          "label": "formvector",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "logoportada": {
+        "type": "Image",
+        "config": {
+          "label": "logoportada",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "cuadro1": {
+        "type": "Image",
+        "config": {
+          "label": "cuadro1",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "cuadro2": {
+        "type": "Image",
+        "config": {
+          "label": "cuadro2",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "cuadro3": {
+        "type": "Image",
+        "config": {
+          "label": "cuadro3",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "cuadro4": {
+        "type": "Image",
+        "config": {
+          "label": "cuadro4",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "cuadro5": {
+        "type": "Image",
+        "config": {
+          "label": "cuadro5",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "cuadro6": {
+        "type": "Image",
+        "config": {
+          "label": "cuadro6",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "imagencomida": {
+        "type": "Image",
+        "config": {
+          "label": "imagencomida",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "imagensalud": {
+        "type": "Image",
+        "config": {
+          "label": "imagensalud",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_description": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        },
+        "type": "Text"
+      },
+      "meta_image": {
+        "config": {
+          "constraint": {
+            "height": 1260,
+            "width": 2400
+          },
+          "label": "Meta Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "meta_title": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        },
+        "type": "Text"
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "evento",
+  "type": "SharedSlice",
+  "name": "Evento",
+  "description": "Evento",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "foto": {
+          "type": "Image",
+          "config": {
+            "label": "foto",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "titulo": {
+          "type": "Text",
+          "config": {
+            "label": "titulo",
+            "placeholder": ""
+          }
+        },
+        "descripcion": {
+          "type": "StructuredText",
+          "config": {
+            "label": "descripcion",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "ubicacion": {
+          "type": "Text",
+          "config": {
+            "label": "ubicacion",
+            "placeholder": ""
+          }
+        },
+        "fecha": {
+          "type": "Date",
+          "config": {
+            "label": "fecha",
+            "placeholder": ""
+          }
+        },
+        "horario": {
+          "type": "Text",
+          "config": {
+            "label": "horario",
+            "placeholder": ""
+          }
+        },
+        "contacto": {
+          "type": "Text",
+          "config": {
+            "label": "contacto",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

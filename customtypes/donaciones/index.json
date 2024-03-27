@@ -1,0 +1,150 @@
+{
+  "format": "page",
+  "id": "donaciones",
+  "label": "donaciones",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "textportada": {
+        "type": "StructuredText",
+        "config": {
+          "label": "textportada",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "fondocirculos": {
+        "type": "Image",
+        "config": {
+          "label": "fondocirculos",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "formvectorgato": {
+        "type": "Image",
+        "config": {
+          "label": "formvectorgato",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "gatoportada": {
+        "type": "Image",
+        "config": {
+          "label": "gatoportada",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "yapeicono": {
+        "type": "Image",
+        "config": {
+          "label": "yapeicono",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "yapeqr": {
+        "type": "Image",
+        "config": {
+          "label": "yapeqr",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "logobcp": {
+        "type": "Image",
+        "config": {
+          "label": "logobcp",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "donacion1": {
+        "type": "Image",
+        "config": {
+          "label": "donacion1",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "donacion2": {
+        "type": "Image",
+        "config": {
+          "label": "donacion2",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "donacion3": {
+        "type": "Image",
+        "config": {
+          "label": "donacion3",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "donacion4": {
+        "type": "Image",
+        "config": {
+          "label": "donacion4",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "donacion5": {
+        "type": "Image",
+        "config": {
+          "label": "donacion5",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "grafica": {
+        "type": "Image",
+        "config": {
+          "label": "grafica",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_description": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        },
+        "type": "Text"
+      },
+      "meta_image": {
+        "config": {
+          "constraint": {
+            "height": 1260,
+            "width": 2400
+          },
+          "label": "Meta Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "meta_title": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        },
+        "type": "Text"
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "id": "dog_card",
+  "type": "SharedSlice",
+  "name": "DogCard",
+  "description": "DogCard",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "nombre": {
+          "type": "Text",
+          "config": {
+            "label": "nombre",
+            "placeholder": ""
+          }
+        },
+        "edad": {
+          "type": "Text",
+          "config": {
+            "label": "edad",
+            "placeholder": ""
+          }
+        },
+        "lugar": {
+          "type": "Text",
+          "config": {
+            "label": "lugar",
+            "placeholder": ""
+          }
+        },
+        "tamanhio": {
+          "type": "Text",
+          "config": {
+            "label": "tamanhio",
+            "placeholder": ""
+          }
+        },
+        "esterilizacion": {
+          "type": "Boolean",
+          "config": {
+            "label": "esterilizacion",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "peso": {
+          "type": "Text",
+          "config": {
+            "label": "peso",
+            "placeholder": ""
+          }
+        },
+        "vacunas": {
+          "type": "StructuredText",
+          "config": {
+            "label": "vacunas",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "descripcion": {
+          "type": "StructuredText",
+          "config": {
+            "label": "descripcion",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "tipo": {
+          "type": "Select",
+          "config": {
+            "label": "tipo",
+            "placeholder": "",
+            "options": [
+              "dog",
+              "cat"
+            ],
+            "default_value": "dog"
+          }
+        },
+        "sexo": {
+          "type": "Select",
+          "config": {
+            "label": "sexo",
+            "placeholder": "Selecciona el sexo del animalito",
+            "options": [
+              "hembra",
+              "macho"
+            ]
+          }
+        },
+        "foto": {
+          "type": "Image",
+          "config": {
+            "label": "foto",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      }
+    }
+  ]
+}

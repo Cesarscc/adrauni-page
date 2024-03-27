@@ -1,0 +1,94 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"foto",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+								"width": 4076,
+								"height": 2712
+							},
+							"url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+							"width": 4076,
+							"height": 2712,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"titulo",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "paid",
+							"type": "Text"
+						}
+					],
+					[
+						"descripcion",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Aliqua aute nulla enim et deserunt laboris aliquip dolor eiusmod non laborum labore occaecat nulla. Ad excepteur cillum amet eu magna tempor."
+									}
+								}
+							]
+						}
+					],
+					[
+						"ubicacion",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "neck",
+							"type": "Text"
+						}
+					],
+					[
+						"fecha",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Date",
+							"value": "2017-02-18"
+						}
+					],
+					[
+						"horario",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "afraid",
+							"type": "Text"
+						}
+					],
+					[
+						"contacto",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "grew",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	}
+]

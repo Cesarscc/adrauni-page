@@ -1,0 +1,129 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"nombre",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "trail",
+							"type": "Text"
+						}
+					],
+					[
+						"edad",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "support",
+							"type": "Text"
+						}
+					],
+					[
+						"lugar",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "meal",
+							"type": "Text"
+						}
+					],
+					[
+						"tamanhio",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "arrow",
+							"type": "Text"
+						}
+					],
+					[
+						"esterilizacion",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": false
+						}
+					],
+					[
+						"peso",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "apart",
+							"type": "Text"
+						}
+					],
+					[
+						"vacunas",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Est veniam magna ullamco eiusmod elit consectetur excepteur. Proident incididunt ipsum reprehenderit duis culpa duis incididunt aliquip labore reprehenderit ullamco fugiat nostrud nulla Lorem. Voluptate mollit in veniam enim non in aliqua duis laborum."
+									}
+								}
+							]
+						}
+					],
+					[
+						"descripcion",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Est commodo cupidatat non veniam fugiat deserunt eu aute sunt et ullamco culpa tempor pariatur. Qui ut enim labore veniam cillum Lorem quis enim mollit cupidatat id cupidatat. Lorem magna consectetur amet et cupidatat officia commodo incididunt elit."
+									}
+								}
+							]
+						}
+					],
+					[
+						"tipo",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "cat",
+							"type": "Select"
+						}
+					],
+					[
+						"sexo",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "hembra",
+							"type": "Select"
+						}
+					],
+					[
+						"foto",
+						{
+							"__TYPE__": "ImageContent",
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9",
+								"width": 4752,
+								"height": 3168
+							},
+							"url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9",
+							"width": 4752,
+							"height": 3168,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"thumbnails": {}
+						}
+					]
+				]
+			}
+		]
+	}
+]

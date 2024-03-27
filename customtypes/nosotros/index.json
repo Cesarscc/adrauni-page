@@ -1,0 +1,141 @@
+{
+  "format": "page",
+  "id": "nosotros",
+  "label": "nosotros",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "imagedecorizq": {
+        "type": "Image",
+        "config": {
+          "label": "imagedecorizq",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "imagedecorder": {
+        "type": "Image",
+        "config": {
+          "label": "imagedecorder",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "imageorg": {
+        "type": "Image",
+        "config": {
+          "label": "imageorg",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "imagehistoriafondo": {
+        "type": "Image",
+        "config": {
+          "label": "imagehistoriafondo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "imagehistoria1": {
+        "type": "Image",
+        "config": {
+          "label": "imagehistoria1",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "imagehistoria2": {
+        "type": "Image",
+        "config": {
+          "label": "imagehistoria2",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "videoadra": {
+        "type": "Link",
+        "config": {
+          "label": "videoadra",
+          "placeholder": "",
+          "select": "media"
+        }
+      },
+      "mision1": {
+        "type": "Image",
+        "config": {
+          "label": "mision1",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "mision2": {
+        "type": "Image",
+        "config": {
+          "label": "mision2",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "mision3": {
+        "type": "Image",
+        "config": {
+          "label": "mision3",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "mision4": {
+        "type": "Image",
+        "config": {
+          "label": "mision4",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "mision5": {
+        "type": "Image",
+        "config": {
+          "label": "mision5",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_description": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        },
+        "type": "Text"
+      },
+      "meta_image": {
+        "config": {
+          "constraint": {
+            "height": 1260,
+            "width": 2400
+          },
+          "label": "Meta Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "meta_title": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        },
+        "type": "Text"
+      }
+    }
+  }
+}
