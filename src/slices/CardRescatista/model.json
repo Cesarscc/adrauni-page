@@ -1,0 +1,67 @@
+{
+  "id": "card_rescatista",
+  "type": "SharedSlice",
+  "name": "CardRescatista",
+  "description": "CardRescatista",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "fotoprofile": {
+          "type": "Image",
+          "config": {
+            "label": "fotoprofile",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "nombre": {
+          "type": "Text",
+          "config": {
+            "label": "nombre",
+            "placeholder": ""
+          }
+        },
+        "celular": {
+          "type": "Text",
+          "config": {
+            "label": "celular",
+            "placeholder": ""
+          }
+        },
+        "cuentabancaria": {
+          "type": "StructuredText",
+          "config": {
+            "label": "cuentabancaria",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "descripcion": {
+          "type": "StructuredText",
+          "config": {
+            "label": "descripcion",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "yapeqr": {
+          "type": "Image",
+          "config": {
+            "label": "yapeqr",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "fotos_caso",
+  "type": "SharedSlice",
+  "name": "FotosCaso",
+  "description": "FotosCaso",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "foto": {
+          "type": "Image",
+          "config": {
+            "label": "foto",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      }
+    }
+  ]
+}

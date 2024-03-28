@@ -1059,6 +1059,137 @@ export type NosotrosDocument<Lang extends string = string> =
     Lang
   >;
 
+type RescatistasDocumentDataSlicesSlice = never;
+
+type RescatistasDocumentDataSlices2Slice = CardRescatistaSlice;
+
+type RescatistasDocumentDataSlices3Slice = CasosRescateSlice;
+
+type RescatistasDocumentDataSlices4Slice = FotosCasoSlice;
+
+/**
+ * Content for rescatistas documents
+ */
+interface RescatistasDocumentData {
+  /**
+   * portada1 field in *rescatistas*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: rescatistas.portada1
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  portada1: prismic.ImageField<never>;
+
+  /**
+   * portada2 field in *rescatistas*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: rescatistas.portada2
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  portada2: prismic.ImageField<never>;
+
+  /**
+   * portada3 field in *rescatistas*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: rescatistas.portada3
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  portada3: prismic.ImageField<never>;
+
+  /**
+   * Slice Zone field in *rescatistas*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: rescatistas.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<RescatistasDocumentDataSlicesSlice> /**
+   * Meta Description field in *rescatistas*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: rescatistas.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *rescatistas*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: rescatistas.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *rescatistas*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: rescatistas.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField /**
+   * Slice Zone field in *rescatistas*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: rescatistas.slices2[]
+   * - **Tab**: CardRescatista
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */;
+  slices2: prismic.SliceZone<RescatistasDocumentDataSlices2Slice> /**
+   * Slice Zone field in *rescatistas*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: rescatistas.slices3[]
+   * - **Tab**: CasosRescatista
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */;
+  slices3: prismic.SliceZone<RescatistasDocumentDataSlices3Slice> /**
+   * Slice Zone field in *rescatistas*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: rescatistas.slices4[]
+   * - **Tab**: FotosCaso
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */;
+  slices4: prismic.SliceZone<RescatistasDocumentDataSlices4Slice>;
+}
+
+/**
+ * rescatistas document from Prismic
+ *
+ * - **API ID**: `rescatistas`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type RescatistasDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithoutUID<
+    Simplify<RescatistasDocumentData>,
+    "rescatistas",
+    Lang
+  >;
+
 export type AllDocumentTypes =
   | AdopcionesDocument
   | ContactoDocument
@@ -1067,7 +1198,209 @@ export type AllDocumentTypes =
   | FooterDocument
   | IndexDocument
   | NavbarDocument
-  | NosotrosDocument;
+  | NosotrosDocument
+  | RescatistasDocument;
+
+/**
+ * Primary content in *CardRescatista → Primary*
+ */
+export interface CardRescatistaSliceDefaultPrimary {
+  /**
+   * fotoprofile field in *CardRescatista → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: card_rescatista.primary.fotoprofile
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  fotoprofile: prismic.ImageField<never>;
+
+  /**
+   * nombre field in *CardRescatista → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: card_rescatista.primary.nombre
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  nombre: prismic.KeyTextField;
+
+  /**
+   * celular field in *CardRescatista → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: card_rescatista.primary.celular
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  celular: prismic.KeyTextField;
+
+  /**
+   * cuentabancaria field in *CardRescatista → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: card_rescatista.primary.cuentabancaria
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  cuentabancaria: prismic.RichTextField;
+
+  /**
+   * descripcion field in *CardRescatista → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: card_rescatista.primary.descripcion
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  descripcion: prismic.RichTextField;
+
+  /**
+   * yapeqr field in *CardRescatista → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: card_rescatista.primary.yapeqr
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  yapeqr: prismic.ImageField<never>;
+}
+
+/**
+ * Default variation for CardRescatista Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type CardRescatistaSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<CardRescatistaSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *CardRescatista*
+ */
+type CardRescatistaSliceVariation = CardRescatistaSliceDefault;
+
+/**
+ * CardRescatista Shared Slice
+ *
+ * - **API ID**: `card_rescatista`
+ * - **Description**: CardRescatista
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type CardRescatistaSlice = prismic.SharedSlice<
+  "card_rescatista",
+  CardRescatistaSliceVariation
+>;
+
+/**
+ * Primary content in *CasosRescate → Primary*
+ */
+export interface CasosRescateSliceDefaultPrimary {
+  /**
+   * fotoperrito field in *CasosRescate → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: casos_rescate.primary.fotoperrito
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  fotoperrito: prismic.ImageField<never>;
+
+  /**
+   * nombre field in *CasosRescate → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: casos_rescate.primary.nombre
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  nombre: prismic.KeyTextField;
+
+  /**
+   * edad field in *CasosRescate → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: casos_rescate.primary.edad
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  edad: prismic.KeyTextField;
+
+  /**
+   * historia field in *CasosRescate → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: casos_rescate.primary.historia
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  historia: prismic.RichTextField;
+
+  /**
+   * sobremi field in *CasosRescate → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: casos_rescate.primary.sobremi
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  sobremi: prismic.RichTextField;
+
+  /**
+   * donacionesyapoyo field in *CasosRescate → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: casos_rescate.primary.donacionesyapoyo
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  donacionesyapoyo: prismic.RichTextField;
+
+  /**
+   * encurso field in *CasosRescate → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: casos_rescate.primary.encurso
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  encurso: prismic.BooleanField;
+}
+
+/**
+ * Default variation for CasosRescate Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type CasosRescateSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<CasosRescateSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *CasosRescate*
+ */
+type CasosRescateSliceVariation = CasosRescateSliceDefault;
+
+/**
+ * CasosRescate Shared Slice
+ *
+ * - **API ID**: `casos_rescate`
+ * - **Description**: CasosRescate
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type CasosRescateSlice = prismic.SharedSlice<
+  "casos_rescate",
+  CasosRescateSliceVariation
+>;
 
 /**
  * Primary content in *CatCard → Items*
@@ -1465,6 +1798,51 @@ type EventoSliceVariation = EventoSliceDefault;
  */
 export type EventoSlice = prismic.SharedSlice<"evento", EventoSliceVariation>;
 
+/**
+ * Primary content in *FotosCaso → Items*
+ */
+export interface FotosCasoSliceDefaultItem {
+  /**
+   * foto field in *FotosCaso → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: fotos_caso.items[].foto
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  foto: prismic.ImageField<never>;
+}
+
+/**
+ * Default variation for FotosCaso Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FotosCasoSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Record<string, never>,
+  Simplify<FotosCasoSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *FotosCaso*
+ */
+type FotosCasoSliceVariation = FotosCasoSliceDefault;
+
+/**
+ * FotosCaso Shared Slice
+ *
+ * - **API ID**: `fotos_caso`
+ * - **Description**: FotosCaso
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FotosCasoSlice = prismic.SharedSlice<
+  "fotos_caso",
+  FotosCasoSliceVariation
+>;
+
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -1499,7 +1877,21 @@ declare module "@prismicio/client" {
       NosotrosDocument,
       NosotrosDocumentData,
       NosotrosDocumentDataSlicesSlice,
+      RescatistasDocument,
+      RescatistasDocumentData,
+      RescatistasDocumentDataSlicesSlice,
+      RescatistasDocumentDataSlices2Slice,
+      RescatistasDocumentDataSlices3Slice,
+      RescatistasDocumentDataSlices4Slice,
       AllDocumentTypes,
+      CardRescatistaSlice,
+      CardRescatistaSliceDefaultPrimary,
+      CardRescatistaSliceVariation,
+      CardRescatistaSliceDefault,
+      CasosRescateSlice,
+      CasosRescateSliceDefaultPrimary,
+      CasosRescateSliceVariation,
+      CasosRescateSliceDefault,
       CatCardSlice,
       CatCardSliceDefaultItem,
       CatCardSliceVariation,
@@ -1512,6 +1904,10 @@ declare module "@prismicio/client" {
       EventoSliceDefaultItem,
       EventoSliceVariation,
       EventoSliceDefault,
+      FotosCasoSlice,
+      FotosCasoSliceDefaultItem,
+      FotosCasoSliceVariation,
+      FotosCasoSliceDefault,
     };
   }
 }

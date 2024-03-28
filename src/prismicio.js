@@ -37,6 +37,10 @@ const routes = [
     type: "contacto",
     path: "/contacto",
   },
+  {
+    type: "rescatistas",
+    path: "/rescatistas",
+  },
 ];
 
 /**

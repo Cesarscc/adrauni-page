@@ -1,0 +1,77 @@
+{
+  "id": "casos_rescate",
+  "type": "SharedSlice",
+  "name": "CasosRescate",
+  "description": "CasosRescate",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "fotoperrito": {
+          "type": "Image",
+          "config": {
+            "label": "fotoperrito",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "nombre": {
+          "type": "Text",
+          "config": {
+            "label": "nombre",
+            "placeholder": ""
+          }
+        },
+        "edad": {
+          "type": "Text",
+          "config": {
+            "label": "edad",
+            "placeholder": ""
+          }
+        },
+        "historia": {
+          "type": "StructuredText",
+          "config": {
+            "label": "historia",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "sobremi": {
+          "type": "StructuredText",
+          "config": {
+            "label": "sobremi",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "donacionesyapoyo": {
+          "type": "StructuredText",
+          "config": {
+            "label": "donacionesyapoyo",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "encurso": {
+          "type": "Boolean",
+          "config": {
+            "label": "encurso",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

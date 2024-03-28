@@ -3,7 +3,10 @@
 import dynamic from "next/dynamic";
 
 export const components = {
+  card_rescatista: dynamic(() => import("./CardRescatista")),
+  casos_rescate: dynamic(() => import("./CasosRescate")),
   cat_card: dynamic(() => import("./CatCard")),
   dog_card: dynamic(() => import("./DogCard")),
   evento: dynamic(() => import("./Evento")),
+  fotos_caso: dynamic(() => import("./FotosCaso")),
 };
