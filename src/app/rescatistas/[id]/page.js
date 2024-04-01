@@ -1,5 +1,6 @@
 import Layout from "@/components/layout";
 import CardRescatista from "@/components/rescatistas/CardRescatista";
+import CardUid from "@/components/rescatistas/CardUid";
 import PaginadorCardRescatista from "@/components/rescatistas/PaginadorCardRescatista";
 import { createClient } from "@/prismicio";
 import Image from "next/image";
@@ -51,12 +52,7 @@ const Page = async () => {
         </div>
       </section>
       <section>
-        <h1 className="text-center text-[80px] font-plusJakartaSans font-extrabold my-40">
-          Conoce a nuestros héroes!
-        </h1>
-        <div className="my-32">
-          <PaginadorCardRescatista elementos={rescatistas.data.slices2} />
-        </div>
+        <CardUid rescatistas={rescatistas} />
       </section>
     </Layout>
   );

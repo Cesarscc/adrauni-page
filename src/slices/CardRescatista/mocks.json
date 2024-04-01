@@ -59,7 +59,6 @@
 				]
 			},
 			"yapeqr": {
-				"__TYPE__": "ImageContent",
 				"origin": {
 					"id": "main",
 					"url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88",
@@ -77,7 +76,15 @@
 					},
 					"background": "transparent"
 				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
 				"thumbnails": {}
+			},
+			"uid": {
+				"__TYPE__": "FieldContent",
+				"value": "join",
+				"type": "Text"
 			}
 		},
 		"items": [

@@ -34,7 +34,7 @@ const CardEvento = ({ evento }) => {
       <p className="font-rubik font-semibold text-[22px] text-[#2B2B2E] text-center mt-5">
         {evento.titulo}
       </p>
-      <div className="font-plusJakartaSans text-[20px] w-[420px] text-[#353535] text-center mt-5">
+      <div className="font-plusJakartaSans text-[20px] mx-5 text-[#353535] text-left mt-5">
         <PrismicRichText field={evento.descripcion} />
       </div>
       <div className="flex justify-end mr-5 mt-2">

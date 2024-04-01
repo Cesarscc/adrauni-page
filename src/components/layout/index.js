@@ -20,7 +20,11 @@ const Layout = ({ children, footerdata, navdata }) => {
 
   return (
     <>
-      {scrollX >= 768 ? <Navbar navdata={navdata} /> : <Smallnav />}
+      {scrollX >= 1024 ? (
+        <Navbar navdata={navdata} />
+      ) : (
+        <Smallnav navdata={navdata} />
+      )}
       <div>{children}</div>
       <Footer footerdata={footerdata} />
     </>

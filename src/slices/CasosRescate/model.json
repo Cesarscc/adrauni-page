@@ -11,7 +11,8 @@
       "version": "initial",
       "description": "Default",
       "imageUrl": "",
-      "primary": {
+      "primary": {},
+      "items": {
         "fotoperrito": {
           "type": "Image",
           "config": {
@@ -70,8 +71,7 @@
             "placeholder_false": "false"
           }
         }
-      },
-      "items": {}
+      }
     }
   ]
 }

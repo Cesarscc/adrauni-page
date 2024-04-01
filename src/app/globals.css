@@ -28,3 +28,62 @@
 .div-custom-contacto {
   background-color: rgba(244, 150, 6, 0.43); /* RGBA con opacidad 0.65 */
 }
+
+.dashboard {
+  scrollbar-width: thin;
+  scrollbar-color: #c4c4c4 #100d0c;
+}
+
+.dashboard::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 9999px;
+  background-color: #c4c4c4;
+}
+
+.dashboard::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+  border-radius: 9999px;
+}
+
+.dashboard::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #100d0c;
+}
+
+.swiper-button-next {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: darkgray;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.swiper-button-prev {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: darkgray;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  color: white;
+  font-size: 20px !important;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  color: white;
+  font-size: 20px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: black !important;
+}

@@ -39,7 +39,7 @@ const routes = [
   },
   {
     type: "rescatistas",
-    path: "/rescatistas",
+    path: "/rescatistas/:uid",
   },
 ];
 

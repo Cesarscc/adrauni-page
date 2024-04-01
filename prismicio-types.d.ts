@@ -1264,6 +1264,16 @@ export interface CardRescatistaSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   yapeqr: prismic.ImageField<never>;
+
+  /**
+   * uid field in *CardRescatista → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: card_rescatista.primary.uid
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  uid: prismic.KeyTextField;
 }
 
 /**
@@ -1297,76 +1307,76 @@ export type CardRescatistaSlice = prismic.SharedSlice<
 >;
 
 /**
- * Primary content in *CasosRescate → Primary*
+ * Primary content in *CasosRescate → Items*
  */
-export interface CasosRescateSliceDefaultPrimary {
+export interface CasosRescateSliceDefaultItem {
   /**
-   * fotoperrito field in *CasosRescate → Primary*
+   * fotoperrito field in *CasosRescate → Items*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: casos_rescate.primary.fotoperrito
+   * - **API ID Path**: casos_rescate.items[].fotoperrito
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   fotoperrito: prismic.ImageField<never>;
 
   /**
-   * nombre field in *CasosRescate → Primary*
+   * nombre field in *CasosRescate → Items*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: casos_rescate.primary.nombre
+   * - **API ID Path**: casos_rescate.items[].nombre
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   nombre: prismic.KeyTextField;
 
   /**
-   * edad field in *CasosRescate → Primary*
+   * edad field in *CasosRescate → Items*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: casos_rescate.primary.edad
+   * - **API ID Path**: casos_rescate.items[].edad
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   edad: prismic.KeyTextField;
 
   /**
-   * historia field in *CasosRescate → Primary*
+   * historia field in *CasosRescate → Items*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: casos_rescate.primary.historia
+   * - **API ID Path**: casos_rescate.items[].historia
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   historia: prismic.RichTextField;
 
   /**
-   * sobremi field in *CasosRescate → Primary*
+   * sobremi field in *CasosRescate → Items*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: casos_rescate.primary.sobremi
+   * - **API ID Path**: casos_rescate.items[].sobremi
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   sobremi: prismic.RichTextField;
 
   /**
-   * donacionesyapoyo field in *CasosRescate → Primary*
+   * donacionesyapoyo field in *CasosRescate → Items*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: casos_rescate.primary.donacionesyapoyo
+   * - **API ID Path**: casos_rescate.items[].donacionesyapoyo
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   donacionesyapoyo: prismic.RichTextField;
 
   /**
-   * encurso field in *CasosRescate → Primary*
+   * encurso field in *CasosRescate → Items*
    *
    * - **Field Type**: Boolean
    * - **Placeholder**: *None*
    * - **Default Value**: false
-   * - **API ID Path**: casos_rescate.primary.encurso
+   * - **API ID Path**: casos_rescate.items[].encurso
    * - **Documentation**: https://prismic.io/docs/field#boolean
    */
   encurso: prismic.BooleanField;
@@ -1381,8 +1391,8 @@ export interface CasosRescateSliceDefaultPrimary {
  */
 export type CasosRescateSliceDefault = prismic.SharedSliceVariation<
   "default",
-  Simplify<CasosRescateSliceDefaultPrimary>,
-  never
+  Record<string, never>,
+  Simplify<CasosRescateSliceDefaultItem>
 >;
 
 /**
@@ -1889,7 +1899,7 @@ declare module "@prismicio/client" {
       CardRescatistaSliceVariation,
       CardRescatistaSliceDefault,
       CasosRescateSlice,
-      CasosRescateSliceDefaultPrimary,
+      CasosRescateSliceDefaultItem,
       CasosRescateSliceVariation,
       CasosRescateSliceDefault,
       CatCardSlice,
