@@ -10,7 +10,7 @@ const Video = ({ video }) => {
       <video
         src={video.url}
         controls={playvideo}
-        className="w-full h-full"
+        className="w-[289px] sm:w-[320px] md:w-[520px] h-[114px] sm:h-[190px] md:h-[300px] lg:w-full lg:h-full"
       ></video>
       <div
         className={`absolute inset-0 mix-blend-color ${playvideo ? "bg-transparent opacity-100 -z-10 " : " bg-[#008CDB] opacity-55 z-0"}`}
@@ -26,7 +26,7 @@ const Video = ({ video }) => {
         {!playvideo && (
           <>
             <Substrack />
-            <p className="text-[24px] font-semibold text-[#008CDB] font-rubik">
+            <p className="text-[14px] md:text-[24px] font-semibold text-[#008CDB] font-rubik">
               Ver Vídeo
             </p>
           </>

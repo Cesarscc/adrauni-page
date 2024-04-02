@@ -73,7 +73,7 @@ const ContadorNosotros = () => {
   }, []);
 
   return (
-    <div className="flex justify-evenly bg-[#EAEFF3] h-[332px] rounded-[32px] my-20 mx-20 pt-10">
+    <div className="flex justify-evenly bg-[#EAEFF3] lg:h-[332px] rounded-[32px] my-5 lg:my-20 mx-5 md:mx-20 py-5 md:py-10 md:pt-10">
       <div className={`fadeEffect1 opacity-0`}>
         <p className="text-center text-[#F97700] text-[24px] md:text-[28px] lg:text-[130px] font-baloo font-extrabold">
           {count}

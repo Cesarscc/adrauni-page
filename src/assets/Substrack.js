@@ -1,11 +1,25 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 
 export const Substrack = () => {
+  const [scrollX, setScrollX] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollX(document.documentElement.clientWidth);
+    };
+    handleScroll();
+    window.addEventListener("resize", handleScroll);
+    return () => {
+      window.removeEventListener("resize", handleScroll);
+    };
+  }, [scrollX]);
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="86"
-      height="86"
+      width={`${scrollX >= 780 ? "86" : "40"}`}
+      height={`${scrollX >= 780 ? "86" : "40"}`}
       fill="none"
       viewBox="0 0 86 86"
     >
