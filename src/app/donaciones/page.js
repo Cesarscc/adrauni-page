@@ -44,8 +44,9 @@ const Page = async () => {
               height={611}
             />
           </div>
-          <div className="absolute top-0">
+          <div className="absolute left-8 sm:left-0 top-0">
             <Image
+              className="w-[40vw] h-[60vw] sm:w-auto sm:h-auto"
               src={donaciones.data.gatoportada.url}
               alt={donaciones.data.gatoportada.alt}
               width={400}

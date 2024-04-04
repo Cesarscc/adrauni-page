@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const ArrowInfo = () => {
+  const [scrollX, setScrollX] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollX(document.documentElement.clientWidth);
+    };
+    handleScroll();
+    window.addEventListener("resize", handleScroll);
+    return () => {
+      window.removeEventListener("resize", handleScroll);
+    };
+  }, [scrollX]);
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="36"
-      height="36"
+      width={`${scrollX >= 1024 ? "36" : "16"}`}
+      height={`${scrollX >= 1024 ? "36" : "16"}`}
       fill="none"
       viewBox="0 0 36 41"
     >

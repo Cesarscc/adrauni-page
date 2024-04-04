@@ -1,11 +1,25 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 
 const Search = () => {
+  const [scrollX, setScrollX] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollX(document.documentElement.clientWidth);
+    };
+    handleScroll();
+    window.addEventListener("resize", handleScroll);
+    return () => {
+      window.removeEventListener("resize", handleScroll);
+    };
+  }, [scrollX]);
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
+      width={`${scrollX >= 768 ? "24" : "16"}`}
+      height={`${scrollX >= 768 ? "24" : "16"}`}
       fill="none"
       viewBox="0 0 24 24"
     >

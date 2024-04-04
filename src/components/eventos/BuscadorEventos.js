@@ -36,14 +36,16 @@ const BuscadorEvento = ({ data }) => {
     <>
       <div className="relative flex justify-center h-[70px]">
         <button
-          className="w-[193px] h-[70px] bg-[#F49606] flex justify-center items-center"
+          className="w-[193px] h-[32px] lg:h-[70px] bg-[#F49606] flex justify-center items-center"
           onClick={handleEvents}
         >
-          <p className="font-inter font-bold text-[25px]">EVENTOS</p>
+          <p className="font-inter font-bold text-[10px] md:text-[25px]">
+            EVENTOS
+          </p>
         </button>
 
         <input
-          className="bg-[#F8F8F8] w-[730px] h-[70px] text-center font-inter font-normal text-[14px] outline-none"
+          className="bg-[#F8F8F8] w-[730px] h-[32px] lg:h-[70px] text-center font-inter font-normal text-[10px] md:text-[14px] outline-none"
           type="text"
           placeholder="Escribe aquí el evento "
           value={inputValue}
@@ -52,7 +54,7 @@ const BuscadorEvento = ({ data }) => {
         />
         <button
           onClick={handleClick}
-          className="relative bg-[#F49606] w-[107px] text-[14px] text-white flex items-center justify-evenly rounded-[7px]"
+          className="relative bg-[#F49606] w-[107px] h-[32px] lg:h-[70px] text-[10px] md:text-[14px] text-white flex items-center justify-evenly rounded-[7px]"
         >
           <p className="">
             <Search />
@@ -60,7 +62,7 @@ const BuscadorEvento = ({ data }) => {
           Buscar
         </button>
       </div>
-      <section className="my-28">
+      <section className="my-10 lg:my-28">
         <PaginadorEvento elementos={arrayfilter} />
       </section>
     </>

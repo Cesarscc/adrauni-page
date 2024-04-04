@@ -15,34 +15,34 @@ const Page = async () => {
   return (
     <Layout footerdata={footerdata} navdata={navdata}>
       <section className="relative my-20">
-        <div className="bg-white brightness-[0.40] flex gap-5 mx-5">
+        <div className="bg-white brightness-[0.40] flex gap-5 lg:mx-5">
           <Image
+            className="w-[40vw] h-[40vw]"
             src={eventos.data.portada1.url}
             alt={eventos.data.portada1.alt}
             width={500}
             height={765}
-            layout="responsive"
           />
           <Image
+            className="w-[40vw] h-[40vw]"
             src={eventos.data.portada2.url}
             alt={eventos.data.portada2.alt}
             width={500}
             height={765}
-            layout="responsive"
           />
           <Image
+            className="w-[40vw] h-[40vw]"
             src={eventos.data.portada3.url}
             alt={eventos.data.portada3.alt}
             width={500}
             height={765}
-            layout="responsive"
           />
         </div>
-        <div className="absolute top-0 transform translate-x-[10%] translate-y-72 text-center max-w-[1300px]">
-          <strong className="font-inter font-black text-[70px] text-white">
+        <div className="absolute top-0 transform translate-x-[15%] lg:translate-x-[10%] xl:translate-x-[10%] translate-y-[80%] lg:translate-y-[55%] 2xl:translate-y-[80%] text-center max-w-[70vw] lg:max-w-[85vw] 2xl:max-w-[1280px]">
+          <strong className="font-inter font-black text-[5vw] lg:text-[6vw] xl:text-[70px] text-white">
             Eventos especiales para los{" "}
           </strong>
-          <strong className="font-inter font-black text-[70px] text-[#F49606]">
+          <strong className="font-inter font-black text-[5vw] lg:text-[6vw] xl:text-[70px] text-[#F49606]">
             amantes de los animalitos!
           </strong>
         </div>
