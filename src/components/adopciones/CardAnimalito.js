@@ -15,7 +15,7 @@ const CardAnimalito = ({ animalito }) => {
   };
 
   return (
-    <div className="max-w-[413px] h-[443px] border-[1px] rounded-[20px] bg-[#FCFCFC] shadow-xl">
+    <div className="max-w-[413px] h-auto pb-5 lg:h-[443px] border-[1px] rounded-[20px] bg-[#FCFCFC] shadow-xl">
       <div className="rounded-t-[20px] max-h-[295px] overflow-hidden">
         <Image
           alt={animalito.foto.alt}

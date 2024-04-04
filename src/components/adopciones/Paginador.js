@@ -29,8 +29,8 @@ const Paginador = ({ elementos }) => {
   };
 
   return (
-    <div className="mx-24">
-      <div className="grid grid-cols-3 gap-10">
+    <div className="mx-4 lg:mx-5 xl:mx-24">
+      <div className="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-5">
         {elementosPaginaActual.map((animalito, index) => (
           <div key={index}>
             <CardAnimalito animalito={animalito} />
@@ -40,7 +40,7 @@ const Paginador = ({ elementos }) => {
       <p className="font-rubik font-semibold text-[36px] text-[#000000] brightness-50 text-right mr-20 mt-14">
         {paginaActual}
       </p>
-      <div className="flex justify-end mr-20 mt-4">
+      <div className="flex justify-end mr-10 lg:mr-20 mt-4">
         <div className="flex gap-3">
           <button
             onClick={retrocederPagina}

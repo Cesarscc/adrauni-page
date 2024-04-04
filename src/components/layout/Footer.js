@@ -44,11 +44,11 @@ const Footer = ({ footerdata }) => {
             </li>
           </ul>
         </div>
-        <div className="sm:w-1/4 lg:w-full  mb-10 sm:pt-16 xl:pt-0">
+        <div className="sm:w-1/4 lg:w-full mb-10 sm:pt-16 xl:pt-0">
           <p className="text-[#FF9F00] text-[20px] text-center lg:text-left font-extrabold font-plusJakartaSans">
             CONTÁCTANOS
           </p>
-          <div className="flex flex-row sm:flex-col lg:flex-row items-center gap-10 lg:gap-6 xl:gap-11 mt-12">
+          <div className="flex flex-row sm:flex-col lg:flex-row items-center gap-8 lg:gap-6 xl:gap-11 mt-12">
             <a href="https://www.facebook.com/adrauni" target="_blank">
               <Facebook />
             </a>
