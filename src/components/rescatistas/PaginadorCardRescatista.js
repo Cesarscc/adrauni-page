@@ -29,7 +29,7 @@ const PaginadorCardRescatista = ({ elementos }) => {
   };
 
   return (
-    <div className="mx-24">
+    <div className="mx-5 xl:mx-24">
       <div className="grid grid-cols-1 gap-10">
         {elementosPaginaActual.map((cardData, index) => (
           <div key={index}>
