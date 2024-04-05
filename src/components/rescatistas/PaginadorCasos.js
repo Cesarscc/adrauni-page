@@ -29,10 +29,10 @@ const PaginadorCasos = ({ elementos, dataFotos }) => {
   };
 
   return (
-    <div className="mx-24 my-40">
-      <div className="grid grid-cols-3 gap-10">
+    <div className="my-10 md:mx-5 xl:mx-5 2xl:mx-24 xl:my-40">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-10">
         {elementosPaginaActual.map((animalito, index) => (
-          <div key={index}>
+          <div className="" key={index}>
             <CardAnimalito animalito={animalito} dataFotos={dataFotos} />
           </div>
         ))}
