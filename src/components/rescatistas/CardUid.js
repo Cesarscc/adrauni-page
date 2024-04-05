@@ -138,16 +138,18 @@ const CardUid = ({ rescatistas }) => {
           </div>
         ) : (
           <>
-            <p>Cargando...</p>
+            <p className="text-center font-extrabold font-plusJakartaSans text-[20px]">
+              Cargando...
+            </p>
           </>
         )}
       </section>
       <section className="mt-10 xl:mt-0">
-        <h1 className="font-plusJakartaSans font-extrabold text-[20px] xl:text-[60px] text-center">
-          Casos de rescates: Transformando vidas
-        </h1>
         {indice ? (
           <>
+            <h1 className="font-plusJakartaSans font-extrabold text-[20px] sm:text-[30px] md:text-[40px] lg:text-[50px] xl:text-[60px] text-center">
+              Casos de rescates: Transformando vidas
+            </h1>
             <div>
               <PaginadorCasos
                 elementos={rescatistas.data.slices3[indice].items}
@@ -156,7 +158,9 @@ const CardUid = ({ rescatistas }) => {
             </div>
           </>
         ) : (
-          <p>Cargando</p>
+          <p className="text-center font-extrabold font-plusJakartaSans text-[20px]">
+            Cargando
+          </p>
         )}
       </section>
     </>
