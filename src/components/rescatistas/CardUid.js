@@ -158,9 +158,7 @@ const CardUid = ({ rescatistas }) => {
             </div>
           </>
         ) : (
-          <p className="text-center font-extrabold font-plusJakartaSans text-[20px]">
-            Cargando
-          </p>
+          <></>
         )}
       </section>
     </>
