@@ -13,8 +13,8 @@ const Page = async () => {
 
   return (
     <Layout footerdata={footerdata} navdata={navdata}>
-      <section className="lg:max-h-[939px] flex my-10 md:my-20 lg:my-24">
-        <div className="relative">
+      <section className="w-full lg:max-h-[939px] flex my-10 md:my-20 lg:my-24">
+        <div className="basis-[60%] relative">
           <Image
             className="inset-0 w-full h-full object-cover"
             alt={donaciones.data.fondocirculos.alt}
@@ -34,10 +34,10 @@ const Page = async () => {
             </div>
           </div>
         </div>
-        <div className="relative">
+        <div className="basis-[40%] relative">
           <div>
             <Image
-              className="transform lg:-translate-x-[15%] translate-y-[10%]"
+              className=" transform lg:-translate-x-[15%] translate-y-[10%]"
               src={donaciones.data.formvectorgato.url}
               alt={donaciones.data.formvectorgato.alt}
               width={626}
@@ -46,7 +46,7 @@ const Page = async () => {
           </div>
           <div className="absolute left-8 sm:left-0 top-0">
             <Image
-              className="w-[40vw] h-[60vw] sm:w-auto sm:h-auto"
+              className="w-[40vw] h-[60vw] lg:w-[30vw] lg:h-[50vw]"
               src={donaciones.data.gatoportada.url}
               alt={donaciones.data.gatoportada.alt}
               width={400}

@@ -19,7 +19,7 @@ module.exports = {
         rubik: ["Rubik", "sans-serif"],
         acme: ["Acme", "sans-serif"],
         hammersmith: ["Hammersmith One", "sans-serif"],
-        baloo: ["Baloo Bhaijaan", "sans-serif"],
+        baloo: ["Baloo Bhaijaan 2", "sans-serif"],
         inter: ["Inter", "sans-serif"],
       },
       boxShadow: {

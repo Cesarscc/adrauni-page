@@ -86,7 +86,7 @@ const Buscador = ({ searchDog, searchCat, data }) => {
           onChange={handleChange}
           onClick={handeChangeOpen}
         >
-          <option value="" disabled selected>
+          <option value="" disabled defaultValue>
             Tipo
           </option>
           {opciones.map((opcion) => (

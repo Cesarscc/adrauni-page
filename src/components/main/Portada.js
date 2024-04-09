@@ -66,6 +66,7 @@ const Portada = ({ index }) => {
           src={index.data.formvector.url}
           width={scrollX >= 768 ? 798 : scrollX >= 640 ? 400 : 229}
           height={783}
+          priority
         />
       </div>
       <div className="sm:basis-1/2 md:basis-3/5 max-w-[185px] sm:max-w-[330px] md:max-w-[450px] lg:max-w-[600px] xl:max-w-[710px] 2xl:max-w-[1042px] max-h-[246px] absolute right-0 top-[90px] sm:top-[150px] md:top-[160px] xl:top-[250px] md:mr-[2%] lg:mr-[5%] 2xl:mr-0">

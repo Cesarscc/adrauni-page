@@ -115,10 +115,10 @@ const Smallnav = ({ navdata }) => {
                   </svg>
                 </button>
               </div>
-              <div className="aspect-[200/122]">
+              <div>
                 <a href="/" className="">
                   <Image
-                    className="w-full h-full"
+                    className="max-w-[51px] h-[45px] md:max-w-[86px] md:h-[70px]"
                     src={navdata.data.logo.url}
                     alt={navdata.data.logo.alt}
                     height={scrollX >= 768 ? 110 : 65}
